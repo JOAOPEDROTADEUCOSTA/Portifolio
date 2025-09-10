@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio - João Pedro</title>
+<style>
+    /* ===== Reset e estilo base ===== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f2f5;
+        color: #333;
+        scroll-behavior: smooth;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* ===== Header ===== */
+    header {
+        background: linear-gradient(135deg, #007bff, #00d4ff);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
+    nav {
+        margin-top: 20px;
+    }
+    nav a {
+        margin: 0 15px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    nav a:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ===== Seções ===== */
+    section {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px 20px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+    }
+    section.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    h2 {
+        color: #007bff;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+    p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    /* ===== Projetos ===== */
+    .projetos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .projeto {
+        background: #f7f9fc;
+        padding: 20px;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+    .projeto:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    }
+    .projeto h3 {
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+    .projeto p {
+        font-size: 0.95rem;
+    }
+
+    /* ===== Habilidades ===== */
+    .habilidades ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .habilidades li {
+        background: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: transform 0.3s;
+    }
+    .habilidades li:hover {
+        transform: scale(1.1);
+    }
+
+    /* ===== Contato ===== */
+    #contato a {
+        color: #007bff;
+        font-weight: bold;
+    }
+    .btn-curriculo {
+        display: inline-block;
+        margin-top: 15px;
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: background 0.3s;
+    }
+    .btn-curriculo:hover {
+        background: #0056b3;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #007bff;
+        color: white;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>João Pedro Tadeu Costa</h1>
+    <p>Desenvolvedor Back-end | Python | APIs | Banco de Dados</p>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#educação">Educação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#habilidades interpessoais">habilidades interpessoais</a>
+        <a href="#contato">Contatos</a>
+    </nav>
+</header>
+
+<section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou estudante do 4º semestre de Engenharia de Software na UNA. Tenho 19 anos e sou natural de Belo Horizonte.<br> 
+    Desde o início da minha jornada acadêmica, me interessei pela área de tecnologia. Através de projetos pessoais e acadêmicos, desenvolvi habilidades em Python e estou sempre buscando aprender novas ferramentas e metodologias.<br>
+    Busco uma oportunidade de estágio onde possa contribuir com meus conhecimentos e, ao mesmo tempo, aprender com profissionais experientes da área.</p>
+</section>
+
+<section id="educação">
+    <h2>Educação/Formação</h2>
+    <p>Graduando em Engenharia de Software pela UNA, atualmente no 4º período.</p>
+</section>
+
+<section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos">
+        <div class="projeto" onclick="alert('Python + Flask, CRUD completo e SQLite')">
+            <h3>API de Cadastro de Usuários</h3>
+            <p>Clique para ver detalhes</p>
+        </div>
+        <div class="projeto" onclick="alert('Python + PostgreSQL, controle de produtos e relatórios')">
+            <h3>Mini Sistema de Estoque</h3>
+            <p>Clique para ver detalhes</p>
+        </div>
+        <div class="projeto" onclick="alert('Python + Pandas, geração de relatórios automáticos em Excel')">
+            <h3>Automação de Relatórios</h3>
+            <p>Clique para ver detalhes</p>
+        </div>
+    </div>
+</section>
+
+<section id="habilidades" class="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>Python (Flask, Django)</li>
+        <li>Bancos de dados (MySQL, SQLite)</li>
+        <li>APIs REST</li>
+        <li>Git/GitHub</li>
+        <li>Lógica e algoritmos</li>
+        <li>HTML e CSS</li>
+    </ul>
+</section>
+
+<section id="habilidades interpessoais" class="habilidades interpessoais">
+    <h2>Habilidades interpessoais</h2>
+    <ul>
+        <li>Comunicação eficaz</li>
+        <li>Trabalho em equipe</li>
+        <li>Resolução de problemas</li>
+        <li>Aprendizado rápido</li>
+        <li>Organização</li>
+        <li>Proatividade</li>
+        <li>Pensamento crítico</li>
+    </ul>
+</section>
+
+<section id="contato">
+    <h2>Contatos</h2>
+    <p>Localização: Santa Luzia, MG</p>
+    <p>Telefone: <a href= "tel:+5531998825263">(31) 99882-5263</a></p>
+    <p>Email: <a href="mailto:joaopedrotadeucosta36@gmail.com">joaopedrotadeucosta36@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/JOAOPEDROTADEUCOSTA" target="_blank">github.com/joaopedrotadeucosta</a></p>
+    <p>Linkedin: <a href="https://www.linkedin.com/in/joaotadeucosta" target="_blank">linkedin.com/joaopedro</a></p>
+    <a class="btn-curriculo" href="DOC/CURRICULO JOAO.pdf" download>Baixar Currículo</a>
+</section>
+
+<footer>
+    <p>© 2025 João Pedro Tadeu Costa | Desenvolvedor Back-end</p>
+</footer>
+
+<script>
+    // ===== Animação ao rolar a página =====
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>
