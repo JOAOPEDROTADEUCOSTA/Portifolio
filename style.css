@@ -112,23 +112,23 @@
         color: #007bff;
         font-weight: bold;
     }
-    .btn-curriculo {
-        display: inline-block;
-        margin-top: 15px;
-        background: #007bff;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 8px;
-        transition: background 0.3s;
-    }
-    .btn-curriculo:hover {
-        background: #0056b3;
-    }
-
+    
     footer {
         text-align: center;
         padding: 20px;
         background: #007bff;
         color: white;
         margin-top: 40px;
+    }
+
+    .btn-curriculo {
+    display: inline-block;
+    margin-top: 15px;
+    background: #007bff;
+    color: white !important; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: none;
     }
