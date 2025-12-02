@@ -89,6 +89,36 @@
     .projeto p {
         font-size: 0.95rem;
     }
+    .experiencias-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experiencia {
+        background: #f7f9fc;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .experiencia:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    }
+
+    .experiencia h3 {
+        color: #007bff;
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+    }
+
+    .periodo {
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 10px;
+    }
 
     .habilidades ul {
         list-style: none;
