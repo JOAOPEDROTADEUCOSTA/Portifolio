@@ -1,131 +1,424 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfólio - João Pedro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Portfólio de João Pedro Tadeu Costa, desenvolvedor de software com experiência em Node.js, Python, MySQL, Firebase e Power BI."
+  >
+  <meta name="theme-color" content="#080a0f">
+  <title>João Pedro Tadeu Costa | Desenvolvedor de Software</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<header>
-    <h1>João Pedro Tadeu Costa</h1>
-    <p>Desenvolvedor Back-end | Python | APIs | Banco de Dados</p>
-    <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#educação">Educação</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#habilidades interpessoais">habilidades interpessoais</a>
-        <a href="#contato">Contatos</a>
+  <header class="site-header" aria-label="Cabeçalho principal">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span>João Pedro</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </nav>
-</header>
+  </header>
 
-<section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Sou estudante do 5º semestre de Engenharia de Software na UNA. Tenho 20 anos e sou natural de Belo Horizonte.<br> 
-    Desde o início da minha jornada acadêmica, me interessei pela área de tecnologia. Através de projetos pessoais e acadêmicos, desenvolvi habilidades em Python e estou sempre buscando aprender novas ferramentas e metodologias.<br>
-    Busco uma oportunidade de estágio onde possa contribuir com meus conhecimentos e, ao mesmo tempo, aprender com profissionais experientes da área.</p>
-</section>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
 
-<section id="educação">
-    <h2>Educação/Formação</h2>
-    <p>Graduando em Engenharia de Software pela UNA, atualmente no 4º período.</p>
-</section>
+      <div class="hero-content">
+        <div class="sphere-wrap hero-enter hero-enter-1" aria-hidden="true">
+          <div class="sphere">
+            <span class="sphere-ring sphere-ring-one"></span>
+            <span class="sphere-ring sphere-ring-two"></span>
+          </div>
+          <span class="sphere-shadow"></span>
+        </div>
 
-<section id="projetos">
-    <h2>Projetos</h2>
-    <div class="projetos">
-        <div class="projeto" onclick="alert('Python + Flask, CRUD completo e SQLite')">
-            <h3>API de Cadastro de Usuários</h3>
-            <p>Em Andamento...</p>
+        <p class="eyebrow hero-enter hero-enter-2">
+          <span class="status-dot" aria-hidden="true"></span>
+          João Pedro Tadeu Costa · Santa Luzia, MG
+        </p>
+
+        <h1 class="hero-enter hero-enter-3" id="hero-title">Desenvolvedor de Software</h1>
+
+        <p class="hero-description hero-enter hero-enter-4">
+          Transformo ideias em <span>soluções digitais eficientes</span>, desenvolvendo aplicações
+          com código organizado, boas práticas e foco na <span>experiência do usuário</span>.
+        </p>
+
+        <div class="hero-actions hero-enter hero-enter-5">
+          <a class="button button-primary" href="#contato">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19">
+              <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"></path>
+              <path d="m22 6-10 7L2 6"></path>
+            </svg>
+            Entre em contato
+          </a>
+
+          <a class="button button-secondary" href="#projetos">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19">
+              <path d="M12 5v14"></path>
+              <path d="m19 12-7 7-7-7"></path>
+            </svg>
+            Ver projetos
+          </a>
         </div>
-        <div class="projeto" onclick="window.open('https://sistema-de-estoque-h5tp.onrender.com/', '_blank')">
-            <h3>Mini Sistema de Estoque</h3>
-            <p>Clique para ver detalhes</p>
+
+        <div class="social-links hero-enter hero-enter-6" aria-label="Links sociais">
+          <a
+            class="social-link"
+            href="https://github.com/JOAOPEDROTADEUCOSTA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir GitHub de João Pedro em uma nova aba"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.3.5S18.2.1 15 2a13.4 13.4 0 0 0-7 0C4.8.1 3.7.5 3.7.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4"></path>
+              <path d="M8 19c-3 .9-3-1.5-4-2"></path>
+            </svg>
+          </a>
+
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/joaotadeucosta"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir LinkedIn de João Pedro em uma nova aba"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"></path>
+              <path d="M2 9h4v12H2z"></path>
+              <path d="M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+            </svg>
+          </a>
+
+          <a
+            class="social-link"
+            href="mailto:joaopedrotadeucosta36@gmail.com"
+            aria-label="Enviar e-mail para João Pedro"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
+              <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"></path>
+              <path d="m22 6-10 7L2 6"></path>
+            </svg>
+          </a>
         </div>
-        <div class="projeto" onclick="alert('Python + Pandas, geração de relatórios automáticos em Excel')">
-            <h3>Automação de Relatórios</h3>
-            <p>Em Andamento</p>
+      </div>
+
+      <a class="scroll-hint" href="#sobre" aria-label="Continuar para a seção Sobre">
+        <span>Conheça meu trabalho</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17">
+          <path d="M12 5v14"></path>
+          <path d="m19 12-7 7-7-7"></path>
+        </svg>
+      </a>
+    </section>
+
+    <section class="content-section reveal" id="sobre" aria-labelledby="sobre-title">
+      <div class="section-heading">
+        <p class="section-kicker">Sobre mim</p>
+        <h2 id="sobre-title">Tecnologia aplicada a problemas reais</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            Sou desenvolvedor back-end e estudante do 6º período de Engenharia de Software,
+            com conclusão prevista para dezembro de 2027. Atuo profissionalmente com sistemas
+            web desde dezembro de 2025.
+          </p>
+          <p>
+            Minha experiência combina desenvolvimento, bancos de dados, análise de informações
+            e sustentação de sistemas corporativos. Busco construir soluções confiáveis, claras e
+            alinhadas às necessidades das pessoas que as utilizam.
+          </p>
         </div>
+
+        <dl class="about-facts" aria-label="Informações profissionais">
+          <div>
+            <dt>Atuação</dt>
+            <dd>Back-end e sistemas web</dd>
+          </div>
+          <div>
+            <dt>Formação</dt>
+            <dd>Engenharia de Software</dd>
+          </div>
+          <div>
+            <dt>Localização</dt>
+            <dd>Santa Luzia, MG</dd>
+          </div>
+          <div>
+            <dt>Inglês</dt>
+            <dd>Leitura intermediária</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="content-section reveal" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="section-heading">
+        <p class="section-kicker">Experiência</p>
+        <h2 id="experiencia-title">Sistemas, dados e continuidade operacional</h2>
+        <p>
+          Experiência em ambientes que exigem entendimento do negócio, colaboração e atenção à
+          confiabilidade das soluções.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item featured-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">Dez 2024 — atual</span>
+            <span class="pill">IMA</span>
+          </div>
+          <h3>Estagiário de TI · Desenvolvimento e sustentação</h3>
+          <p>
+            Atuação em desenvolvimento de sistemas web, consultas e manutenção em MySQL,
+            relatórios e dashboards no Power BI. Trabalho com desenvolvimento desde dezembro de 2025.
+          </p>
+
+          <div class="experience-details">
+            <div class="detail-card">
+              <h4>
+                <span aria-hidden="true">🛡️</span>
+                <a href="https://www.sidagro.ima.mg.gov.br/sidagro/login.seam" target="_blank" rel="noopener noreferrer">
+                  Sistema Sidagro
+                </a>
+              </h4>
+              <p>
+                Integrante da equipe responsável pela sustentação funcional e operacional de um
+                sistema corporativo de alta disponibilidade e com regras de negócio complexas.
+              </p>
+              <ul>
+                <li>Levantamento, análise e validação de requisitos com as áreas de negócio.</li>
+                <li>Acompanhamento de incidentes críticos, disponibilidade e correções.</li>
+                <li>Atuação voltada à continuidade e confiabilidade da plataforma.</li>
+              </ul>
+            </div>
+
+            <div class="detail-card">
+              <h4>Sistemas internos</h4>
+              <ul>
+                <li>Sistema de controle patrimonial com movimentações e relatórios.</li>
+                <li>CRUD para registro e análise de informações veterinárias.</li>
+                <li>Painel administrativo integrado a análises no Power BI.</li>
+              </ul>
+              <p class="confidential-note">Códigos e dados internos não são disponibilizados publicamente.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-period">Mar 2023 — abr 2024</span>
+            <span class="pill">DVL</span>
+          </div>
+          <h3>Auxiliar de Suporte a Vendas</h3>
+          <p>
+            Suporte às operações comerciais, assistência aos vendedores, gestão de produtos no
+            e-commerce e apoio às demandas administrativas do setor.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section reveal" id="projetos" aria-labelledby="projetos-title">
+      <div class="section-heading">
+        <p class="section-kicker">Projetos</p>
+        <h2 id="projetos-title">Soluções que coloquei em prática</h2>
+        <p>Projetos públicos e comerciais que demonstram diferentes partes da minha experiência.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-card-featured">
+          <div class="project-topline">
+            <span class="project-number">01</span>
+            <span class="project-type">Projeto comercial</span>
+          </div>
+          <h3>Cardápio Digital · Diretoria Adega</h3>
+          <p>
+            Cardápio digital com painel administrativo e autenticação do Google. Permite cadastrar
+            produtos, alterar preços e ativar ou inativar itens em tempo real.
+          </p>
+          <ul class="tech-list" aria-label="Tecnologias do projeto">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Firebase</li>
+            <li>HTML &amp; CSS</li>
+          </ul>
+          <a class="text-link" href="https://diretoria-adega.web.app/" target="_blank" rel="noopener noreferrer">
+            Ver projeto online
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17">
+              <path d="M7 17 17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-number">02</span>
+            <span class="project-type">Projeto de estudo</span>
+          </div>
+          <h3>Mini Sistema de Estoque</h3>
+          <p>
+            Aplicação web para controle de itens em estoque, criada para praticar operações CRUD,
+            persistência de dados e organização de uma aplicação Python.
+          </p>
+          <ul class="tech-list" aria-label="Tecnologias do projeto">
+            <li>Python</li>
+            <li>SQLite</li>
+            <li>HTML &amp; CSS</li>
+          </ul>
+          <div class="project-links">
+            <a class="text-link" href="https://sistema-de-estoque-h5tp.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Abrir demonstração
+            </a>
+            <a class="text-link muted-link" href="https://github.com/JOAOPEDROTADEUCOSTA/SISTEMA-DE-ESTOQUE" target="_blank" rel="noopener noreferrer">
+              Código no GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-number">03</span>
+            <span class="project-type">Curso.dev</span>
+          </div>
+          <h3>Clone do TabNews</h3>
+          <p>
+            Implementação evolutiva do TabNews desenvolvida durante o curso.dev, com práticas de
+            versionamento, testes e construção incremental de software.
+          </p>
+          <ul class="tech-list" aria-label="Tecnologias do projeto">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Testes</li>
+          </ul>
+          <a class="text-link" href="https://github.com/JOAOPEDROTADEUCOSTA/clone-tabnews" target="_blank" rel="noopener noreferrer">
+            Ver repositório
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17">
+              <path d="M7 17 17 7"></path>
+              <path d="M7 7h10v10"></path>
+            </svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section reveal" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="section-heading">
+        <p class="section-kicker">Conhecimentos</p>
+        <h2 id="habilidades-title">Tecnologias e competências</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-group">
+          <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
+          <h3>Desenvolvimento</h3>
+          <p>Node.js, JavaScript, Python, HTML, CSS, APIs e Git/GitHub.</p>
+        </article>
+        <article class="skill-group">
+          <span class="skill-icon" aria-hidden="true">DB</span>
+          <h3>Dados</h3>
+          <p>MySQL, SQLite, Firebase/Firestore, consultas, relatórios e manutenção.</p>
+        </article>
+        <article class="skill-group">
+          <span class="skill-icon" aria-hidden="true">BI</span>
+          <h3>Business Intelligence</h3>
+          <p>Power BI, Power Query, modelagem de dados, dashboards e medidas DAX.</p>
+        </article>
+        <article class="skill-group">
+          <span class="skill-icon" aria-hidden="true">UX</span>
+          <h3>Forma de trabalhar</h3>
+          <p>Requisitos, resolução de problemas, comunicação, organização e aprendizado contínuo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section reveal" id="formacao" aria-labelledby="formacao-title">
+      <div class="education-card">
+        <div>
+          <p class="section-kicker">Formação</p>
+          <h2 id="formacao-title">Engenharia de Software</h2>
+          <p>Centro Universitário UNA · 6º período</p>
+        </div>
+        <div class="education-date">
+          <span>Conclusão prevista</span>
+          <strong>Dezembro de 2027</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section reveal" id="contato" aria-labelledby="contato-title">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="contact-content">
+        <p class="section-kicker">Vamos conversar?</p>
+        <h2 id="contato-title">Tem uma oportunidade ou projeto em mente?</h2>
+        <p>
+          Estou aberto a conversar sobre desenvolvimento back-end, sistemas web e desafios que
+          possam gerar impacto real.
+        </p>
+
+        <a class="button button-primary" href="mailto:joaopedrotadeucosta36@gmail.com">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19">
+            <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"></path>
+            <path d="m22 6-10 7L2 6"></path>
+          </svg>
+          Enviar e-mail
+        </a>
+
+        <div class="contact-details">
+          <a href="tel:+5531998825263">(31) 99882-5263</a>
+          <span aria-hidden="true">•</span>
+          <a href="mailto:joaopedrotadeucosta36@gmail.com">joaopedrotadeucosta36@gmail.com</a>
+        </div>
+
+        <a class="resume-link" href="curriculo.pdf" target="_blank" rel="noopener noreferrer">
+          Ver currículo em PDF
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+            <path d="M12 3v12"></path>
+            <path d="m7 10 5 5 5-5"></path>
+            <path d="M5 21h14"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 João Pedro Tadeu Costa</p>
+    <div>
+      <a href="https://github.com/JOAOPEDROTADEUCOSTA" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/joaotadeucosta" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
-</section>
+  </footer>
 
-<section id="experiencias">
-    <h2>Experiências Profissionais</h2>
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
 
-    <div class="experiencias-container">
-
-        <div class="experiencia">
-            <h3>Auxiliar de Suporte a Vendas - DVL </h3>
-            <p class="periodo">Março 2023 — Abril 2024</p>
-            <p>Atuava no suporte às operações de vendas, prestando assistência aos vendedores, gerenciando produtos no e-commerce e contribuindo com diversas demandas administrativas do setor comercial.</p>
-        </div>
-
-        <div class="experiencia">
-            <h3>Estagío T.I - IMA</h3>
-            <p class="periodo">DEZEMBRO 2024 - Atual</p>
-            <p>Atuação no atendimento ao usuário, auxiliando na solução de problemas relacionados a hardware, software e acesso a sistemas. 
-                Realização de configurações básicas, instalação de programas, organização de chamados e acompanhamento de solicitações. Suporte presencial e remoto, sempre priorizando clareza, agilidade e boa comunicação.</p>
-        </div>
-
-    </div>
-</section>
-
-<section id="habilidades" class="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-        <li>Python (Flask, Django)</li>
-        <li>Bancos de dados (MySQL, SQLite)</li>
-        <li>Scrum</li>
-        <li>Java</li>
-        <li>Git/GitHub</li>
-        <li>Lógica e algoritmos</li>
-        <li>HTML e CSS</li>
-    </ul>
-</section>
-
-<section id="habilidades interpessoais" class="habilidades interpessoais">
-    <h2>Habilidades interpessoais</h2>
-    <ul>
-        <li>Comunicação eficaz</li>
-        <li>Trabalho em equipe</li>
-        <li>Resolução de problemas</li>
-        <li>Aprendizado rápido</li>
-        <li>Organização</li>
-        <li>Proatividade</li>
-        <li>Pensamento crítico</li>
-    </ul>
-</section>
-
-<section id="contato">
-    <h2>Contatos</h2>
-    <p>Localização: Santa Luzia, MG</p>
-    <p>Telefone: <a href= "tel:+5531998825263">(31) 99882-5263</a></p>
-    <p>Email: <a href="mailto:joaopedrotadeucosta36@gmail.com">joaopedrotadeucosta36@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/JOAOPEDROTADEUCOSTA" target="_blank">github.com/joaopedrotadeucosta</a></p>
-    <p>Linkedin: <a href="https://www.linkedin.com/in/joaotadeucosta" target="_blank">linkedin.com/joaopedro</a></p>
-    <a class="btn-curriculo" href="curriculo.pdf" target="_blank">Ver Currículo</a>
-</section>
-
-<footer>
-    <p>© 2026 João Pedro Tadeu Costa | Desenvolvedor Back-end</p>
-</footer>
-
-<script>
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.add('visible');
-            }
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
         });
-    }, { threshold: 0.2 });
+      }, { threshold: 0.12 });
 
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-</script>
-
+      revealElements.forEach((element) => observer.observe(element));
+    } else {
+      revealElements.forEach((element) => element.classList.add('is-visible'));
+    }
+  </script>
 </body>
 </html>
