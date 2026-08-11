@@ -11,7 +11,6 @@
   --text-muted: #788292;
   --blue: #79aaff;
   --blue-strong: #4c8dff;
-  --green: #6ee7a8;
   --max-width: 1120px;
   --header-height: 72px;
   --radius: 22px;
@@ -120,8 +119,8 @@ svg {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.055);
   color: #fff;
-  font-size: 0.75rem;
-  letter-spacing: -0.04em;
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .site-nav {
@@ -210,78 +209,38 @@ svg {
   text-align: center;
 }
 
-.sphere-wrap {
+.profile-photo-wrap {
   position: relative;
-  width: 132px;
-  height: 154px;
+  width: 160px;
+  height: 184px;
   margin-bottom: 8px;
-  animation: float 5.2s ease-in-out infinite;
-  transform-origin: center;
 }
 
-.sphere {
+.profile-photo-frame {
   position: relative;
   z-index: 2;
-  width: 132px;
-  height: 132px;
+  width: 160px;
+  height: 160px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50%;
-  background:
-    radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.52) 6%, transparent 19%),
-    radial-gradient(circle at 35% 31%, #abb1ba 0%, #737a84 22%, #414751 51%, #1b1f26 75%, #080a0e 100%);
   box-shadow:
-    inset -22px -30px 40px rgba(0, 0, 0, 0.68),
-    inset 14px 12px 28px rgba(255, 255, 255, 0.13),
-    0 30px 54px rgba(0, 0, 0, 0.62),
-    0 0 44px rgba(111, 145, 204, 0.08);
+    0 18px 42px rgba(0, 0, 0, 0.52),
+    0 0 0 5px rgba(255, 255, 255, 0.025),
+    0 0 38px rgba(111, 145, 204, 0.1);
 }
 
-.sphere::before {
-  position: absolute;
-  inset: 7px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: inherit;
-  background:
-    repeating-radial-gradient(ellipse at center, transparent 0 14px, rgba(255, 255, 255, 0.055) 15px, transparent 16px),
-    repeating-linear-gradient(90deg, transparent 0 18px, rgba(255, 255, 255, 0.035) 19px, transparent 20px);
-  content: "";
-  filter: blur(0.2px);
-  opacity: 0.7;
-  transform: rotate(-18deg) scale(1.2);
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;
+  transform: scale(1.02);
+  transform-origin: 50% 40%;
 }
 
-.sphere::after {
-  position: absolute;
-  top: 17px;
-  left: 23px;
-  width: 44px;
-  height: 24px;
-  border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.34), transparent 72%);
-  content: "";
-  filter: blur(5px);
-  transform: rotate(-34deg);
-}
-
-.sphere-ring {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 145px;
-  height: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) rotate(-14deg);
-}
-
-.sphere-ring-two {
-  width: 58px;
-  height: 147px;
-  transform: translate(-50%, -50%) rotate(22deg);
-}
-
-.sphere-shadow {
+.profile-photo-shadow {
   position: absolute;
   bottom: 4px;
   left: 50%;
@@ -303,14 +262,6 @@ svg {
   font-weight: 700;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-}
-
-.status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 0 4px rgba(110, 231, 168, 0.09), 0 0 18px rgba(110, 231, 168, 0.35);
 }
 
 .hero h1 {
@@ -999,11 +950,6 @@ svg {
   }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(-1deg); }
-  50% { transform: translateY(-9px) rotate(1deg); }
-}
-
 @media (max-width: 900px) {
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1046,23 +992,14 @@ svg {
     padding-left: 16px;
   }
 
-  .sphere-wrap {
-    width: 108px;
-    height: 128px;
+  .profile-photo-wrap {
+    width: 124px;
+    height: 146px;
   }
 
-  .sphere {
-    width: 108px;
-    height: 108px;
-  }
-
-  .sphere-ring-one {
-    width: 119px;
-  }
-
-  .sphere-ring-two {
-    width: 48px;
-    height: 119px;
+  .profile-photo-frame {
+    width: 124px;
+    height: 124px;
   }
 
   .hero h1 {
